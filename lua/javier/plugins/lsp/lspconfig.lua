@@ -131,6 +131,28 @@ return {
           },
         })
       end,
+      lspconfig.tailwindcss.setup({
+        on_attach = on_attach,
+        capabilities = capabilities,
+        filetypes = { "templ", "astro", "javascript", "typescript", "react" },
+        settings = {
+          tailwindCSS = {
+            includeLanguages = {
+              templ = "html",
+            },
+          },
+        },
+      }),
+      lspconfig.htmx.setup({
+        on_attach = on_attach,
+        capabilities = capabilities,
+        filetypes = { "html", "templ" },
+      }),
+    })
+    lspconfig.html.setup({
+      on_attach = on_attach,
+      capabilities = capabilities,
+      filetypes = { "html", "templ" },
     })
   end,
 }

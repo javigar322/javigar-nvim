@@ -44,6 +44,7 @@ return {
         "c",
         "go",
         "python",
+        "templ",
       },
       incremental_selection = {
         enable = true,

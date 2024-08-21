@@ -38,6 +38,9 @@ return {
         "prismals",
         "pyright",
         "gopls",
+        "templ",
+        "cmake",
+        "htmx",
       },
     })
 
